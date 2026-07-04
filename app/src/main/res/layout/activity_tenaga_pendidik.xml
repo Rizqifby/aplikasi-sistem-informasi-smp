@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    android:orientation="horizontal"
+    tools:context=".Pendidik.TenagaPendidik">
+
+    <RelativeLayout
+        android:id="@+id/Tenaga_pendidik"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_35sdp"
+        android:background="@drawable/rectangle_back">
+        <RelativeLayout
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/_9sdp"
+            android:onClick="back">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/back"
+                android:onClick="back" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_tenagaPendidik"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TENAGA PENDIDIK"
+            android:textColor="@color/white"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textSize="17sp"
+            android:fontFamily="@font/poppins_bold"/>
+    </RelativeLayout>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab_layout"
+        android:layout_below="@id/Tenaga_pendidik"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#D90889CB"
+        app:tabSelectedTextColor="@color/white"
+        app:tabTextColor="@color/grey_02"
+        app:tabIndicatorColor="@color/white"
+        app:tabTextAppearance="@style/Kuncara"
+        app:tabIndicatorHeight="@dimen/_2sdp">
+            
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/mapel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="MAPEL"/>
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/bk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="BK"/>
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TU"/>
+
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:layout_below="@id/tab_layout"
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+</RelativeLayout>

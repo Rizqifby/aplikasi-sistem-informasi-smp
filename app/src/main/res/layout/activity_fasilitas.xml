@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:clipToPadding="false"
+    android:backgroundTint="#fff"
+    tools:context=".Fasilitas.Fasilitas">
+    <RelativeLayout
+        android:id="@+id/fasilitas"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:background="@drawable/rectangle_back">
+        <RelativeLayout
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_centerVertical="true"
+            android:onClick="back">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/back"
+                android:onClick="back"
+                android:layout_marginLeft="@dimen/_9sdp"
+                android:layout_centerVertical="true"/>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fasilitas"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            android:fontFamily="@font/poppins_bold"
+            android:layout_marginLeft="@dimen/_61sdp"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <ScrollView
+        android:layout_below="@id/fasilitas"
+        android:id="@+id/sV_ekskul"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+<!--            Mushola -->
+            <RelativeLayout
+                android:id="@+id/Mushola"
+                android:layout_width="@dimen/_280sdp"
+                android:layout_height="@dimen/_190sdp"
+                android:background="@drawable/rectangle_ekstra"
+                android:elevation="@dimen/_5sdp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_10sdp">
+
+                <androidx.viewpager.widget.ViewPager
+                    android:id="@+id/vp_mushola"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_155sdp"
+                    android:layout_centerHorizontal="true"
+                    />
+
+                <me.relex.circleindicator.CircleIndicator
+                    android:layout_width="match_parent"
+                    android:layout_height="43dp"
+                    android:id="@+id/circularIndikatorMushola"
+                    android:layout_marginTop="@dimen/_127sdp"
+                    app:ci_drawable="@drawable/circle_indikator_fasilitas"
+                    app:ci_drawable_unselected="@drawable/circle_indikator_white"/>
+
+                <TextView
+                    android:layout_below="@id/vp_mushola"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="mushola"
+                    android:textAllCaps="true"
+                    android:textSize="@dimen/_15ssp"
+                    android:textColor="@color/black"
+                    android:letterSpacing="0.1"
+                    android:fontFamily="@font/poppins_bold"
+                    android:layout_marginLeft="@dimen/_11sdp"
+                    android:layout_marginTop="@dimen/_5sdp" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/Perpustakaan"
+                android:layout_below="@id/Mushola"
+                android:layout_width="@dimen/_280sdp"
+                android:layout_height="@dimen/_190sdp"
+                android:background="@drawable/rectangle_ekstra"
+                android:elevation="@dimen/_5sdp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_10sdp">
+
+                <androidx.viewpager.widget.ViewPager
+                    android:id="@+id/vp_perpustakaan"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_155sdp"
+                    android:layout_centerHorizontal="true"
+                    />
+
+                <me.relex.circleindicator.CircleIndicator
+                    android:layout_width="match_parent"
+                    android:layout_height="43dp"
+                    android:id="@+id/circularIndikatorPerpustakaan"
+                    android:layout_marginTop="@dimen/_127sdp"
+                    app:ci_drawable="@drawable/circle_indikator_fasilitas"
+                    app:ci_drawable_unselected="@drawable/circle_indikator_white"/>
+
+                <TextView
+                    android:layout_below="@id/vp_perpustakaan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="perpustakaan"
+                    android:textAllCaps="true"
+                    android:textSize="@dimen/_15ssp"
+                    android:textColor="@color/black"
+                    android:letterSpacing="0.1"
+                    android:fontFamily="@font/poppins_bold"
+                    android:layout_marginLeft="@dimen/_11sdp"
+                    android:layout_marginTop="@dimen/_5sdp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/labKom"
+                android:layout_below="@id/Perpustakaan"
+                android:layout_width="@dimen/_280sdp"
+                android:layout_height="@dimen/_190sdp"
+                android:background="@drawable/rectangle_ekstra"
+                android:elevation="@dimen/_5sdp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_10sdp">
+
+                <androidx.viewpager.widget.ViewPager
+                    android:id="@+id/vp_labKom"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_155sdp"
+                    android:layout_centerHorizontal="true"
+                    />
+
+                <me.relex.circleindicator.CircleIndicator
+                    android:layout_width="match_parent"
+                    android:layout_height="43dp"
+                    android:id="@+id/circularIndikatorLabKom"
+                    android:layout_marginTop="@dimen/_127sdp"
+                    app:ci_drawable="@drawable/circle_indikator_fasilitas"
+                    app:ci_drawable_unselected="@drawable/circle_indikator_white"/>
+
+                <TextView
+                    android:layout_below="@id/vp_labKom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="lab. komputer"
+                    android:textAllCaps="true"
+                    android:textSize="@dimen/_15ssp"
+                    android:textColor="@color/black"
+                    android:letterSpacing="0.1"
+                    android:fontFamily="@font/poppins_bold"
+                    android:layout_marginLeft="@dimen/_11sdp"
+                    android:layout_marginTop="@dimen/_5sdp" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/studioMini"
+                android:layout_below="@id/labKom"
+                android:layout_width="@dimen/_280sdp"
+                android:layout_height="@dimen/_190sdp"
+                android:background="@drawable/rectangle_ekstra"
+                android:elevation="@dimen/_5sdp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_10sdp">
+
+                <androidx.viewpager.widget.ViewPager
+                    android:id="@+id/vp_studioMini"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_155sdp"
+                    android:layout_centerHorizontal="true"
+                    />
+
+                <me.relex.circleindicator.CircleIndicator
+                    android:layout_width="match_parent"
+                    android:layout_height="43dp"
+                    android:id="@+id/circularIndikatorStudioMini"
+                    android:layout_marginTop="@dimen/_127sdp"
+                    app:ci_drawable="@drawable/circle_indikator_fasilitas"
+                    app:ci_drawable_unselected="@drawable/circle_indikator_white"/>
+
+                <TextView
+                    android:layout_below="@id/vp_studioMini"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="studio mini"
+                    android:textAllCaps="true"
+                    android:textSize="@dimen/_15ssp"
+                    android:textColor="@color/black"
+                    android:letterSpacing="0.1"
+                    android:fontFamily="@font/poppins_bold"
+                    android:layout_marginLeft="@dimen/_11sdp"
+                    android:layout_marginTop="@dimen/_5sdp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/labIpa"
+                android:layout_below="@id/studioMini"
+                android:layout_width="@dimen/_280sdp"
+                android:layout_height="@dimen/_190sdp"
+                android:background="@drawable/rectangle_ekstra"
+                android:elevation="@dimen/_5sdp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_10sdp">
+
+                <androidx.viewpager.widget.ViewPager
+                    android:id="@+id/vp_labIpa"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_155sdp"
+                    android:layout_centerHorizontal="true"
+                    />
+
+                <me.relex.circleindicator.CircleIndicator
+                    android:layout_width="match_parent"
+                    android:layout_height="43dp"
+                    android:id="@+id/circularIndikatorlabIpa"
+                    android:layout_marginTop="@dimen/_127sdp"
+                    app:ci_drawable="@drawable/circle_indikator_fasilitas"
+                    app:ci_drawable_unselected="@drawable/circle_indikator_white"/>
+
+                <TextView
+                    android:layout_below="@id/vp_labIpa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="lab. ipa"
+                    android:textAllCaps="true"
+                    android:textSize="@dimen/_15ssp"
+                    android:textColor="@color/black"
+                    android:letterSpacing="0.1"
+                    android:fontFamily="@font/poppins_bold"
+                    android:layout_marginLeft="@dimen/_11sdp"
+                    android:layout_marginTop="@dimen/_5sdp" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/multimedia"
+                android:layout_below="@id/labIpa"
+                android:layout_width="@dimen/_280sdp"
+                android:layout_height="@dimen/_190sdp"
+                android:background="@drawable/rectangle_ekstra"
+                android:elevation="@dimen/_5sdp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_10sdp">
+
+                <androidx.viewpager.widget.ViewPager
+                    android:id="@+id/vp_multimedia"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_155sdp"
+                    android:layout_centerHorizontal="true"
+                    />
+
+                <me.relex.circleindicator.CircleIndicator
+                    android:layout_width="match_parent"
+                    android:layout_height="43dp"
+                    android:id="@+id/circularIndikatormultimedia"
+                    android:layout_marginTop="@dimen/_127sdp"
+                    app:ci_drawable="@drawable/circle_indikator_fasilitas"
+                    app:ci_drawable_unselected="@drawable/circle_indikator_white"/>
+
+                <TextView
+                    android:layout_below="@id/vp_multimedia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="multimedia"
+                    android:textAllCaps="true"
+                    android:textSize="@dimen/_15ssp"
+                    android:textColor="@color/black"
+                    android:letterSpacing="0.1"
+                    android:fontFamily="@font/poppins_bold"
+                    android:layout_marginLeft="@dimen/_11sdp"
+                    android:layout_marginTop="@dimen/_5sdp" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/uks"
+                android:layout_below="@id/multimedia"
+                android:layout_width="@dimen/_280sdp"
+                android:layout_height="@dimen/_190sdp"
+                android:background="@drawable/rectangle_ekstra"
+                android:elevation="@dimen/_5sdp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_10sdp">
+
+                <androidx.viewpager.widget.ViewPager
+                    android:id="@+id/vp_uks"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_155sdp"
+                    android:layout_centerHorizontal="true"
+                    />
+
+                <me.relex.circleindicator.CircleIndicator
+                    android:layout_width="match_parent"
+                    android:layout_height="43dp"
+                    android:id="@+id/circularIndikatorluks"
+                    android:layout_marginTop="@dimen/_127sdp"
+                    app:ci_drawable="@drawable/circle_indikator_fasilitas"
+                    app:ci_drawable_unselected="@drawable/circle_indikator_white"/>
+
+                <TextView
+                    android:layout_below="@id/vp_uks"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="uks"
+                    android:textAllCaps="true"
+                    android:textSize="@dimen/_15ssp"
+                    android:textColor="@color/black"
+                    android:letterSpacing="0.1"
+                    android:fontFamily="@font/poppins_bold"
+                    android:layout_marginLeft="@dimen/_11sdp"
+                    android:layout_marginTop="@dimen/_5sdp" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/tamanBaca"
+                android:layout_below="@id/uks"
+                android:layout_width="@dimen/_280sdp"
+                android:layout_height="@dimen/_190sdp"
+                android:background="@drawable/rectangle_ekstra"
+                android:elevation="@dimen/_5sdp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_10sdp">
+
+                <androidx.viewpager.widget.ViewPager
+                    android:id="@+id/vp_tamanBaca"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_155sdp"
+                    android:layout_centerHorizontal="true"
+                    />
+
+                <me.relex.circleindicator.CircleIndicator
+                    android:layout_width="match_parent"
+                    android:layout_height="43dp"
+                    android:id="@+id/circularIndikatortamanBaca"
+                    android:layout_marginTop="@dimen/_127sdp"
+                    app:ci_drawable="@drawable/circle_indikator_fasilitas"
+                    app:ci_drawable_unselected="@drawable/circle_indikator_white"/>
+
+                <TextView
+                    android:layout_below="@id/vp_tamanBaca"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="taman baca"
+                    android:textAllCaps="true"
+                    android:textSize="@dimen/_15ssp"
+                    android:textColor="@color/black"
+                    android:letterSpacing="0.1"
+                    android:fontFamily="@font/poppins_bold"
+                    android:layout_marginLeft="@dimen/_11sdp"
+                    android:layout_marginTop="@dimen/_5sdp" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/lapangan"
+                android:layout_below="@id/tamanBaca"
+                android:layout_width="@dimen/_280sdp"
+                android:layout_height="@dimen/_190sdp"
+                android:background="@drawable/rectangle_ekstra"
+                android:elevation="@dimen/_5sdp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_10sdp">
+
+                <androidx.viewpager.widget.ViewPager
+                    android:id="@+id/vp_lapangan"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_155sdp"
+                    android:layout_centerHorizontal="true"
+                    />
+
+                <me.relex.circleindicator.CircleIndicator
+                    android:layout_width="match_parent"
+                    android:layout_height="43dp"
+                    android:id="@+id/circularIndikatorlapangan"
+                    android:layout_marginTop="@dimen/_127sdp"
+                    app:ci_drawable="@drawable/circle_indikator_fasilitas"
+                    app:ci_drawable_unselected="@drawable/circle_indikator_white"/>
+
+                <TextView
+                    android:layout_below="@id/vp_lapangan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="lapangan"
+                    android:textAllCaps="true"
+                    android:textSize="@dimen/_15ssp"
+                    android:textColor="@color/black"
+                    android:letterSpacing="0.1"
+                    android:fontFamily="@font/poppins_bold"
+                    android:layout_marginLeft="@dimen/_11sdp"
+                    android:layout_marginTop="@dimen/_5sdp" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/kantin"
+                android:layout_below="@id/lapangan"
+                android:layout_width="@dimen/_280sdp"
+                android:layout_height="@dimen/_190sdp"
+                android:background="@drawable/rectangle_ekstra"
+                android:elevation="@dimen/_5sdp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginVertical="@dimen/_10sdp">
+
+                <androidx.viewpager.widget.ViewPager
+                    android:id="@+id/vp_kantin"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_155sdp"
+                    android:layout_centerHorizontal="true"
+                    />
+
+                <me.relex.circleindicator.CircleIndicator
+                    android:layout_width="match_parent"
+                    android:layout_height="43dp"
+                    android:id="@+id/circularIndikatorkantin"
+                    android:layout_marginTop="@dimen/_127sdp"
+                    app:ci_drawable="@drawable/circle_indikator_fasilitas"
+                    app:ci_drawable_unselected="@drawable/circle_indikator_white"/>
+
+                <TextView
+                    android:layout_below="@id/vp_kantin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="kantin"
+                    android:textAllCaps="true"
+                    android:textSize="@dimen/_15ssp"
+                    android:textColor="@color/black"
+                    android:letterSpacing="0.1"
+                    android:fontFamily="@font/poppins_bold"
+                    android:layout_marginLeft="@dimen/_11sdp"
+                    android:layout_marginTop="@dimen/_5sdp" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

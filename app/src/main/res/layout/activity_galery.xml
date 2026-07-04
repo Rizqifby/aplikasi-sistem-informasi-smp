@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:clipToPadding="false"
+    android:backgroundTint="#fff"
+    tools:context=".galeri.Galery">
+
+    <RelativeLayout
+        android:id="@+id/galeri"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:background="@drawable/rectangle_back">
+        <RelativeLayout
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_centerVertical="true"
+            android:onClick="back">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/back"
+                android:onClick="back"
+                android:layout_marginLeft="@dimen/_9sdp"
+                android:layout_centerVertical="true"/>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Galeri"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            android:fontFamily="@font/poppins_bold"
+            android:layout_marginLeft="@dimen/_61sdp"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout_galeri"
+        android:layout_below="@id/galeri"
+        android:layout_width="match_parent"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="10dp"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        app:tabMode="scrollable"
+        app:tabBackground="@drawable/backgroundslide"
+        app:tabTextAppearance="@style/Candra"
+        app:tabTextColor="@color/white"
+        app:tabIndicatorHeight="0dp">
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/HutKemerdekaan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HUT RI Ke 77"/>
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/IdulFitri"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="Hari Pramuka"/>
+
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/vp2_galeri"
+        android:layout_below="@id/tabLayout_galeri"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</RelativeLayout>

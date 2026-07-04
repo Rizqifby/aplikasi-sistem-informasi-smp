@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    tools:context=".Lainnya.Lainnya">
+    <RelativeLayout
+        android:id="@+id/lainnya"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:background="@drawable/rectangle_back">
+        <RelativeLayout
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_centerVertical="true"
+            android:onClick="back">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/back"
+                android:onClick="back"
+                android:layout_marginLeft="@dimen/_9sdp"
+                android:layout_centerVertical="true"/>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lainnya"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            android:fontFamily="@font/poppins_bold"
+            android:layout_marginLeft="@dimen/_61sdp"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_below="@+id/lainnya"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/rv_galeri"
+            android:layout_width="@dimen/_270sdp"
+            android:layout_height="@dimen/_80sdp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/rectangle_medium"
+            android:elevation="8dp"
+            android:layout_marginTop="15dp"
+            android:padding="10dp"
+            android:onClick="galeri">
+            <RelativeLayout
+                android:id="@+id/galeri"
+                android:layout_width="@dimen/_60sdp"
+                android:layout_height="@dimen/_58sdp"
+                android:background="@drawable/rectangle_small"
+                android:onClick="galeri"
+                android:layout_centerVertical="true">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="55dp"
+                    android:layout_centerInParent="true"
+                    android:onClick="galeri"
+                    android:src="@drawable/galeri" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Galeri"
+                android:textSize="@dimen/_20sdp"
+                android:fontFamily="@font/poppins_medium"
+                android:textColor="@color/black"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_below="@+id/rv_galeri"
+            android:id="@+id/rv_perpustakaan"
+            android:layout_width="@dimen/_270sdp"
+            android:layout_height="@dimen/_80sdp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/rectangle_medium"
+            android:elevation="8dp"
+            android:layout_marginTop="15dp"
+            android:padding="10dp">
+            <RelativeLayout
+                android:id="@+id/perpustakaan"
+                android:layout_width="@dimen/_60sdp"
+                android:layout_height="@dimen/_58sdp"
+                android:background="@drawable/rectangle_small"
+                android:layout_centerVertical="true">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="55dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/book"/>
+            </RelativeLayout>
+
+            <TextView
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@id/perpustakaan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Perpustakaan"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:textSize="@dimen/_20sdp"
+                android:fontFamily="@font/poppins_medium"
+                android:textColor="@color/black"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/spebra"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/spebra_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Project"
+        tools:targetApi="31">
+        <activity
+            android:name=".Lainnya.Lainnya"
+            android:exported="false" />
+        <activity
+            android:name=".galeri.Galery"
+            android:exported="false" />
+        <activity
+            android:name=".Prestasi.Prestasi"
+            android:exported="false" />
+        <activity
+            android:name=".Ekskul.PencakSilat"
+            android:exported="false" />
+        <activity
+            android:name=".Ekskul.Band"
+            android:exported="false" />
+        <activity
+            android:name=".Ekskul.PaduanSuara"
+            android:exported="false" />
+        <activity
+            android:name=".Ekskul.Karawitan"
+            android:exported="false" />
+        <activity
+            android:name=".Ekskul.Basket"
+            android:exported="false" />
+        <activity
+            android:name=".Ekskul.Futsal"
+            android:exported="false" />
+        <activity
+            android:name=".Ekskul.Rebana"
+            android:exported="false" />
+        <activity
+            android:name=".Ekskul.PMR"
+            android:exported="false" />
+        <activity
+            android:name=".Ekskul.Tari"
+            android:exported="false" />
+        <activity
+            android:name=".Ekskul.Paskibra"
+            android:exported="false" />
+        <activity
+            android:name=".Ekskul.KIR"
+            android:exported="false" />
+        <activity
+            android:name=".Ekskul.Voli"
+            android:exported="false" />
+        <activity
+            android:name=".Ekskul.Taekwondo"
+            android:exported="false" />
+        <activity
+            android:name=".Ekskul.Pramuka"
+            android:exported="false" />
+        <activity
+            android:name=".Ekskul.activity_ekskul"
+            android:exported="false" />
+        <activity
+            android:name=".Fasilitas.Fasilitas"
+            android:exported="false" />
+        <activity
+            android:name=".Pendidik.TenagaPendidik"
+            android:exported="false" />
+        <activity
+            android:name=".profil.Profil"
+            android:exported="false" />
+        <activity
+            android:name=".SplashScreen"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="false"></activity>
+    </application>
+
+</manifest>
